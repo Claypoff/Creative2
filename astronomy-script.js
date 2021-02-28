@@ -25,7 +25,7 @@ document.getElementById("astroSubmit").addEventListener("click", function(event)
         results += "<div class=astro-item>"
         results += "<img src='" + json[i].url + "' alt='astronomy photo-" + (i + 1) + "'>"
         results += "<br><h2 style='text-align:center;'>Title:</h2><h4 style='text-align:center;color:#e700d5;'>" + json[i].title + "</h4>"
-        results += "<h2 style='text-align:center;'>Author:</h2><h4 style='text-align:center;'>" + json[i].copyright + "</h4>"
+        results += "<h2 style='text-align:center;'>Author:</h2><h4 style='text-align:center;color:#d32c3a;'>" + json[i].copyright + "</h4>"
         results += "<br><h6 style='text-align:center;'>Date the picture was the 'ASPOD': " + json[i].date + "</h6>"
         results += "<h3 style='text-align:center;'>Explanation:</h3>"
         results += "<p class=explanation>" + json[i].explanation + "</p>"

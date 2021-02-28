@@ -29,8 +29,8 @@ document.getElementById("astroidSubmit").addEventListener("click", function(even
       for (let i = 0; i < astroids.length; i++) {
         results += "<div class=astroid-item>"
         results += "<h2 style='text-align:center;color:#e700d5;'>Astroid: " + astroids[i].name + "</h2>"
-        results += "<h3 style='text-align:center;'>The estimated min diameter is: " + astroids[i].estimated_diameter.feet.estimated_diameter_min + " ft<h3>"
-        results += "<h3 style='text-align:center;'>The estimated max diameter is: " + astroids[i].estimated_diameter.feet.estimated_diameter_max + " ft<h3>"
+        results += "<h3 style='text-align:center;color:#d32c3a;'>The estimated min diameter is: " + astroids[i].estimated_diameter.feet.estimated_diameter_min + " ft<h3>"
+        results += "<h3 style='text-align:center;color:#d48e52d9;'>The estimated max diameter is: " + astroids[i].estimated_diameter.feet.estimated_diameter_max + " ft<h3>"
         results += "<h4 style='text-align:center;'>The absolute magnitude of the astroid is " + astroids[i].absolute_magnitude_h + "</h4>"
 
         if (astroids[i].is_potentially_hazardous_asteroid) {
