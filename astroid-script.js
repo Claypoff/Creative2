@@ -7,7 +7,7 @@ document.getElementById("astroidSubmit").addEventListener("click", function(even
   const date = day + "-" + month + "-" + year;
 
   if (year === "" || month === "" || day === "") {
-    let temp = "<br><h1>Please enter a date for the year, month, and day!</h1>"
+    let temp = "<br><h1 style='text-align:center;'>Please enter a valid date for the year, month, and day!</h1>"
     document.getElementById("results").innerHTML = temp;
     return;
   }
@@ -45,7 +45,7 @@ document.getElementById("astroidSubmit").addEventListener("click", function(even
       document.getElementById("results").innerHTML = results;
     })
     .catch((error) => {
-      let results = "<br><h1>Error with getting the data. Please make sure that the date you entered was valid and try again.</h1>"
+      let results = "<br><h1 style='text-align:center;'>Error with getting the data. Please make sure that the date you entered was valid and try again.</h1>"
       document.getElementById("results").innerHTML = results;
     })
 })
