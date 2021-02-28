@@ -4,20 +4,170 @@
   box-sizing: border-box;
 }
 
+/* Menu */
+.bg-dark {
+  background-color: #17152b !important;
+}
+
+.navbar {
+  font-family: monospace !important;
+  font-size: 1.5em !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #888888;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(255,102,203);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #eeeeee;
+}
+
+.navbar-brand {
+  color: #e700d5 !important;
+  font-weight: bolder;
+  font-family: inherit;
+  font-size: 30px;
+}
+
 body {
+  background-color: #F7F7F2;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F7F7F2;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+img {
+  width: 80%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  width: 95%;
+}
+
+#astroSubmit {
+  background-color: #17152b;
+  border: 2px solid #000000;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#astroidSubmit {
+  background-color: #17152b;
+  border: 2px solid #000000;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#marsSubmit {
+  background-color: #17152b;
+  border: 2px solid #000000;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#instructions {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 12px;
+  margin-top: 8px;
+}
+
+#results {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.enter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.astroid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #1151ee;
+  border: 4px solid #d3d3d3;
+}
+
+.astroid-container, .astro, .mars-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.astroid-item, .astro-item, .mars-item {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00008B;
+  background-color: #c4e7f9;
+  width: 70%;
+  margin-bottom: 8px;
+}
+
+.astroid-item {
+  border: 2px solid #eeeeee;
+}
+
+.explanation {
+   text-align: center;
+   width: 98%;
 }
 
 .footer {
   display: flex;
   height: 75px;
   width: 100%;
-  background-color: #7DD3D8;
+  background-color: #17152b;
   justify-content: center;
   align-items: center;
 }
@@ -28,5 +178,39 @@ body {
   align-self: center;
   align-content: center;
   font-size: 1.4em;
-  font-family: sans-serif;
+  color: #eeeeee;
+}
+
+@media only screen and (min-width: 961px) {
+
+  .astroid-container, .astro, .mars-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .astroid-item, .astro-item, .mars-item {
+    width: 31%;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  .astroid-container, .astro, .mars-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .astroid-item, .astro-item, .mars-item {
+    width: 22%;
+    margin-bottom: 20px;
+  }
+
 }

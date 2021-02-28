@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Astronomy</title>
+  <title>Astroids</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
@@ -11,17 +11,17 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand main-items" href="./index.html">C.P.</a>
+    <a class="navbar-brand main-items" href="./mars-photo.html">C.P.</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="./index.html">Astronomy-Pics<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./index.html">Astronomy-Pics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./astroids.html">Astroids</a>
+          <a class="nav-link" href="./astroids.html">Astroids<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./mars-photo.html">Mars</a>
@@ -29,17 +29,29 @@
     </div>
   </nav>
 
-  <h1 style='text-align:center;width:100%;'>Astronomy Photos</h1>
-  <div id="instructions">
-    This program accesses NASA's APODs (Astronomy picture of the Day) and displays them for you. Enter the number of Astronomy pictures you would like and they will be randomly selected and displayed.
-  </div>
+  <h1 style='text-align:center;width:100%;'>Astroids!</h1>
 
+  <div id="instructions">
+    This program uses NASA's data to recieve information on Astroids in space. In order to learn about the closest astroid for a given date, enter the
+    year, month, and day to get the information. In order to make the request, please enter the year as four digits (ex. "1999"); the month as it's number of month; and the day.
+  </div>
   <form>
     <div class="enter">
-      <label>Enter a the number of astronomy photos you would like!</label>
-      <input id="countInput" type="text"></input><br>
+      <label>Enter a valid year (YYYY - must be 4 digits!) </label>
+      <input id="yearInput" type="text"></input><br>
     </div>
-    <input id="astroSubmit" type="submit" value="Submit"></input>
+
+    <div class="enter">
+      <label>Enter a valid month number (ex. March = 3) </label>
+      <input id="monthInput" type="text"></input><br>
+    </div>
+
+    <div class="enter">
+      <label>Enter a valid day</label>
+      <input id="dayInput" type="text"></input><br>
+    </div>
+
+    <input id="astroidSubmit" type="submit" value="Submit"></input>
     <br>
   </form>
 
@@ -53,7 +65,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-  <script text="type/javascript" src="/astronomy-script.js">
+  <script text="type/javascript" src="/astroid-script.js">
   </script>
 
 </body>
